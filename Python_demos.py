@@ -38,7 +38,7 @@
 
 # print(nonrepeat_char('alphabet'))
 
-import collections
+#import collections
 
 # def nonrepeat_char(str):
 #     freq = collections.Counter(str) # it will assign number to each character 
@@ -106,21 +106,46 @@ import collections
 
 # find the number of primenumbers between 1 and given number
 
-def prime_num(n):
-    l = []
-    for i in range(n):
-        if i > 1:
-            for j in range(2,i):
-                if i%j == 0:
-                    break
-            else:
-                l.append(i)
-    print(l)
+# def prime_num(n):
+#     l = []
+#     for i in range(n):
+#         if i > 1:
+#             for j in range(2,i):
+#                 if i%j == 0:
+#                     break
+#             else:
+#                 l.append(i)
+#     print(l)
 
-prime_num(10)
+# prime_num(10)
 
 
+# radkar
+# i = 1
+# s[:i]  = rdkar
 
+#remove the consecutive duplicate characters in each string of 
+#array of strings
+
+# def rem_dup(ar):    
+#     prev = ""
+#     new_ar = []
+#     for s in ar:
+#         new_str = ""
+#         for ch in s:
+#             if len(new_str) == 0:
+#                 new_str += ch
+#                 prev = ch
+#             if ch == prev:
+#                 continue
+#             else:
+#                 new_str += ch
+#                 prev = ch
+#         new_ar.append(new_str)        
+#     return new_ar
+
+    
+# print(rem_dup(['unsuccessfully','happy']))
 
 
 
