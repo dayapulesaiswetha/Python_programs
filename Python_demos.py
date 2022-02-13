@@ -88,8 +88,9 @@
 # B = [None,None,2,None,None,3,None]
 # up_none(B)
 
-#Given two sentences, return an array that has the words that appear in one sentence and not
-#the other and an array with the words in common. 
+#Given two sentences, return an array that has the words that 
+# appear in one sentence and not the other and an array 
+# with the words in common. 
 
 # sentence1 = 'We are really pleased to meet! you in our city'
 # sentence2 = 'The city was hit, by a really heavy storm'
@@ -120,9 +121,20 @@
 # prime_num(10)
 
 
-# radkar
-# i = 1
-# s[:i]  = rdkar
+# Remove on alphabet and check for the palindrome or not
+# def palin(str):
+#     new_str = ""
+#     for i in range(len(str)):
+#         new_str = str[:i] + str[i+1:]
+#         if new_str == new_str[::-1]:
+#             return new_str
+#         else:
+#             continue
+#     return "not palindrome"
+
+# print(palin("radkar"))
+    
+
 
 #remove the consecutive duplicate characters in each string of 
 #array of strings
@@ -136,7 +148,7 @@
 #             if len(new_str) == 0:
 #                 new_str += ch
 #                 prev = ch
-#             if ch == prev:
+#             elif ch == prev:
 #                 continue
 #             else:
 #                 new_str += ch
@@ -147,5 +159,10 @@
     
 # print(rem_dup(['unsuccessfully','happy']))
 
+
+# str = "balnloon"
+# dic = {'key1':'value1','key2':'value2'}
+# print(str.count('n'))
+# print(str.join(dic.values()))
 
 
