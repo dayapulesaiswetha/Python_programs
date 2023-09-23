@@ -1,12 +1,16 @@
 import openpyxl
+import pd
 from openpyxl.chart import BarChart, Reference
 
 def process_xls(filename):
     wb = openpyxl.load_workbook(filename)
+    wb2 = pd.read_excel(filename)
     sheet = wb['Sheet1']
+    sheet2 = wb2['Sheet1']
     cell = sheet['a1'] #sheet.cell(1,1)
     print(cell.value)
     print(sheet.max_row)
+    print(sheet2.cell)
 
     for row in range(2,sheet.max_row +1):
         cell = sheet.cell(row,3)
